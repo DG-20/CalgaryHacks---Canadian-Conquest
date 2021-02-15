@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Canadian Conquest</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	 crossorigin="anonymous">
+  <script src="script.js">
+	</script>
+</head>
+
+<body>
+	<section>
+		<div class="leavesFall">
+			<div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+    </div>
+    <div class = "leavesFall leavesFall2">
+      <div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+    </div>
+    <div class = "leavesFall leavesFall3">
+      <div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf1.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf2.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf3.png" width = "50" height = "50"></div>
+      <div><img src = "Images/leaf4.png" width = "50" height = "50"></div>
+    </div>
+  </section>
+
+  <div class = "Title" id = "Title">
+  	<h1 onClick = "refreshPage()">CANADIAN CONQUEST</h1>
+	</div>
+  
+  <div class = "Intro" id="Intro>
+    <div class="col" style="text-align: center;" id="intro">
+                  <h2><strong>About the Game:</strong></h3>
+    </div>
+    <div class = "IntroText">
+      <div class="col" style="font-size: 20px; padding-left: 17%; padding-right: 17%;">
+        <p style = "text-align: center;"><i>Welcome to the Canadian Conquest!</i> <br>Canada is a land of diversity, inclusion, and polite citizens. <br>It is a country that has it all - from mountains to valleys, from lakes to islands, from moose to Canadian geese. <br>Canada has been home to many iconic individuals such as Terry Fox, Alexander Graham Bell, Aubrey Drake Graham, and Sandra Oh. <br>From coast to coast, Canada is united through equality, safety and peacefulness, and a strong foundational democracy, all of which are reflected in the Canadian Charter of Rights and Freedoms. <br>This country is also well known for its Northern Lights, maple syrup, and Tim Hortons. <br>This game aims to provide a snapshot of Canada in a fun way!
+        </p>
+        <h3>How to Play:</h3>
+          <ul>
+            <li>On the next screen, you will get to pick your avatar from a list of notable Canadian symbols. Once an avatar is selected, you can no longer change it after the game begins.</li>
+            <li>In order to move your character, you must click the "roll die" button located under the board.</li>
+            <li>Once you roll the die, your character will move a certain number of squares as specified on the die.</li>
+            <li>If you feel the need to restart during any point in the game, click on the Title to relaunch the game.</li>
+            <li>Your objective is to get to the last square on the course.</li>
+            </ul>
+          <p style = "text-align: center;" class = "pInIntro">To begin the game click "LET'S SELECT AN AVATAR!" button below to proceed and select your character.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Character Select Screen-->
+
+  <div class="beginButton">
+			<button onClick = begin()>LET'S SELECT AN AVATAR!</button>
+  </div>
+
+  <div class = "characterSelect">
+    <h1>Select your Canadian Character</h1>
+  </div>
+
+	<div class="Characters" style = "text-align: center">
+    <div class = "container">
+      <div class = "row">
+        <div class = "col">
+		      <div class="Beaver" id = "beaver">
+			      <button onClick = chosen(".Beaver") style = "border-style: none; outline: none;"><img src = "Images/Beaver.png" width = "175" height = "175"></img></button>
+          </div>
+			  </div>
+
+        <div class = "col">
+          <div class = "Fox" id = "fox">
+            <button onClick = chosen(".Fox") style = "border-style: none; outline: none;"><img src = "Images/Fox.png" width = "200" height = "150"></img></button>
+          </div>
+        </div>
+
+        <div class = "col">
+          <div class = "Bear" id = "bear">
+            <button onClick = chosen(".Bear") style = "border-style: none; outline: none;"><img src = "Images/Bear.png" width = "175" height = "150"></img></button>
+          </div>
+        </div>
+
+        <div class = "col">
+          <div class = "Moose" id = "moose">
+            <button onClick = chosen(".Moose") style = "border-style: none; outline: none;"><img src = "Images/Moose.png" width = "175" height = "175"></img></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--The actual game screen-->
+  <div class = "toGame">
+    <button onClick = toGame()>To The Game!</button>
+  </div>
+
+  <!--Creating the board-->
+  
+  <div class = "table">
+    <table class = "Board">
+      <tr>
+        <td id = "0"><img src = "Images/LakeLouise.jpg" width = "150" height = "150"></td><td id = "1"><img src = "Images/cn.jpg" width = "150" height = "150"></td><td id = "2"><img src = "Images/basketball.jpg" width = "150" height = "150"></td><td id = "3"><img src = "Images/beave.jpg" width = "150" height = "150"></td>
+      </tr>
+      <tr>
+        <td id = "4"><img src = "Images/inukshuk.jpg" width = "150" height = "150"></td><td id = "5"><img src = "Images/hockey.jpg" width = "150" height = "150"></td><td id = "6"><img src = "Images/niagara.jpg" width = "150" height = "150"></td><td id = "7"><img src = "Images/Canadarm.jpg" width = "150" height = "150"></td>
+      </tr>
+      <tr>
+        <td id = "8"><img src = "Images/lacrosse.jpg" width = "150" height = "150"></td><td id = "9"><img src = "Images/maple.jpg" width = "150" height = "150"></td><td id = "10"><img src = "Images/tim_hortons.jpg" width = "150" height = "150"></td><td id = "11"><img src = "Images/teepee.jpg" width = "150" height = "150"></td>
+      </tr>
+      <tr>
+        <td id = "12"><img src = "Images/toonie.png" width = "150" height = "150"></td><td id = "13"><img src = "Images/syrup.jpg" width = "150" height = "150"></td><td id = "14"><img src = "Images/mounted_police.jpg" width = "150" height = "150"></td><td id = "15"><img src = "Images/canada_flag.png" width = "150" height = "150"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "rollDice">
+    <button onClick = "diceRoller()">CLICK HERE TO ROLL DIE!</button>
+  </div>
+
+</body>
+</html>

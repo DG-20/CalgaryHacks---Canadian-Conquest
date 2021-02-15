@@ -1,0 +1,388 @@
+*
+{
+  scroll-behavior: smooth;
+}
+
+@font-face
+{
+  font-family: font-Winter;
+  src: url("Fonts/KrHockeyFun-AE6D.ttf");
+}
+
+@font-face
+{
+  font-family: arcade;
+  src: url("Fonts/ArcadeClassic-ov2x.ttf");
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow-y: visible;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: rgb(255,0,0);
+  z-index: 1;
+  max-height: 100%;
+}
+
+section
+{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.leavesFall
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.leavesFall div
+{
+  position: absolute;
+  display: block;
+  z-index: -1;
+}
+.leavesFall div:nth-child(1)
+{
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+  z-index: -1;
+}
+.leavesFall div:nth-child(2)
+{
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s;
+  z-index: -1;
+}
+.leavesFall div:nth-child(3)
+{
+  left: 70%;
+  animation: animate 25s linear infinite;
+  z-index: -1;
+}
+.leavesFall div:nth-child(4)
+{
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+  z-index: -1;
+}
+.leavesFall div:nth-child(5)
+{
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10s;
+  z-index: -1;
+}
+.leavesFall div:nth-child(6)
+{
+  left: 0%;
+  animation: animate 12s linear infinite;
+  z-index: -1;
+}
+.leavesFall div:nth-child(7)
+{
+  left: 15%;
+  animation: animate 14s linear infinite;
+  z-index: -1;
+}
+.leavesFall div:nth-child(8)
+{
+  left: 60%; 
+  animation: animate 15s linear infinite;
+  z-index: -1;
+}
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+    top: -10;
+    transform: translateY(20vh) rotate(0deg);
+  }
+  10%
+  {
+    opactiy: 1;
+  }
+  20%
+  {
+    transform: translateY(-10vh) rotate(45deg);
+  }
+  40%
+  {
+    transform: translateY(50vh) rotate(90deg);
+  }
+  60%
+  {
+    transform: translateY(100vh) rotate(135deg);
+  }
+  80%
+  {
+    transform: translateY(50vh) rotate(180deg);
+  }
+  100%
+  {
+    top: 110;
+    transform: translateY(0vh) rotate(180deg);
+  }
+}
+.leavesFall2
+{
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+  z-index: -1;
+}
+.leavesFall3
+{
+  transform: scale(0.8) rotateY(180deg);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.Title h1
+{
+  position: relative;
+  background-color: rgba(118, 121, 121, 0.05);
+  width: 100%;
+  text-align: center;
+  color: rgba(150, 0, 0, 0.781);
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  font-family: font-Winter;
+  z-index: 1;
+  animation-name: initialtransition;
+  animation-duration: 5s;
+}
+
+.Beaver, .Fox, .Bear, .Moose
+{
+  visibility: hidden;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.characterSelect
+{
+  visibility: hidden;
+  text-align: center;
+}
+
+.visible
+{
+  display: contents;
+  visibility: visible;
+  animation-name: initialtransition;
+  animation-duration: 3s;
+}
+
+.goAway
+{
+  display: none;
+}
+
+.selection
+{
+  border-style: solid;
+}
+
+.unSelect
+{
+  border-style: none;
+}
+
+@keyframes initialtransition
+{
+  from { opacity: 0;}
+
+  to { opacity: 1;}
+}
+
+.initialTransition
+{
+  animation-name: initialtransition;
+  animation-duration: 5s;
+  visibility: visible;
+}
+
+.initialTransition2
+{
+  animation-name: initialtransition;
+  animation-duration: 8s;
+  visibility: visible;
+}
+
+.Intro h2
+{
+  padding-top: 2%;
+  animation-name: initialtransition;
+  animation-duration: 8s;
+}
+
+.IntroText p
+{
+  animation-name: initialtransition;
+  animation-duration: 8s;
+}
+
+.IntroText h3
+{
+  animation-name: initialtransition;
+  animation-duration: 8s;
+}
+.IntroText ul
+{
+  animation-name: initialtransition;
+  animation-duration: 8s;
+}
+
+.pInIntro p
+{
+  animation-name: initialtransition;
+  animation-duration: 8s;  
+}
+
+.beginButton button, .toGame button, .rollDice button
+{
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(194, 18, 18);
+  font-size: 150%;
+  margin: 0 auto;
+  display: block;
+  color: black;
+  font-family: arcade;
+  text-emphasis: initial;
+}
+
+.beginButton:hover, .toGame:hover, .rollDice:hover
+{
+  font-size: 85%;
+}
+
+.table
+{
+  display: none;
+}
+
+.showTable
+{
+  display: contents;
+  visibility: visible;
+}
+
+.board
+{
+  display: none;
+  width: 0.01vw;
+  height: 0.01vh;
+}
+.table table
+{
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+#0
+{
+  width: 100;
+  height: 100;
+}
+#1 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#2 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#3 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#4 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#5 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#6 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#7 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#8 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#9 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#10 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#11 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#12 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#13 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#14 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+#15 img
+{
+  width: 1vw;
+  height: 1vh;
+}
+
+.rollDice
+{
+  display: none;
+}
+
+.visible2
+{
+  display: contents;
+  visibility: visible;
+}
+
